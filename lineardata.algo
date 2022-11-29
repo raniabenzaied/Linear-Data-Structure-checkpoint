@@ -1,0 +1,53 @@
+// sum of overlapping elements 
+ALGORITHM somme
+VARIABLE 
+    tab1 :  ARRAY_OF INTEGER[4];
+    tab1 :  ARRAY_OF INTEGER[4];
+    i,j : INTEGER
+
+BEGIN 
+    tab1 :={2,6,3,7}
+    tab2 :={2,3,8,9}
+    READ (tab1)
+    READ (tab2)
+    sum=0
+     FOR i FROM 1 TO tab1.length STEP step  DO {
+     FOR j FROM 1 TO tab2.length STEP step  DO {
+         IF (tab1[i] = tab2[j]) {
+             sum:= tab1[i] + tab2 [j]
+         }
+     }
+     read(sum)
+         END_IF    
+     END_FOR
+END
+
+
+
+
+// sum of distinct elemnts 
+    ALGORITHM somme_dis
+VARIABLE 
+    tableau1 :  ARRAY_OF INTEGER[4];
+    tableau1 :  ARRAY_OF INTEGER[4];
+    i,j : INTEGER
+
+BEGIN 
+    tableau1 :={2,6,3,7}
+    tableau2 :={2,3,8,9}
+    READ (tableau1)
+    READ (tableau2)
+    
+    somme=0
+     FOR i FROM 1 TO tableau1.length STEP step  DO {
+     FOR j FROM 1 TO tableau2.length STEP step  DO {
+         IF (tab1[i] ==! tab2[j]) {
+             somme:= tableau1[i] + tableau2 [j]
+         }
+     }
+     read(somme)
+         END_IF    
+     END_FOR
+END
+
+
